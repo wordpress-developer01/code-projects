@@ -1,21 +1,15 @@
-const firstly = ["Сегодня твой день, потому что", "Не забывай:", "Каждый шаг важен —"];
-const secondly = ["вдохновение уже внутри тебя.","даже ошибка — это путь к успеху.", "маленький прогресс — тоже прогресс."];
-const  thirdly = ["Действуй сейчас.","Улыбнись и иди вперёд.","Сделай хоть что-нибудь полезное."];
-
+const firstly = ["Today is your day because", "Don't forget:", "Every step matters –"];
+const secondly = ["inspiration is already within you.", "even a mistake is part of success.", "small progress is still progress."];
+const thirdly = ["Take action now.", "Smile and move forward.", "Do something useful."];
 
 function getRandom(arr) {
-   // return arr[Math.floor(Math.random() * arr.length)];
-    return arr[Math.floor(Math.random() * arr.length)]
-};
+    return arr[Math.floor(Math.random() * arr.length)];
+}
 
 function Message() {
     const message = `${getRandom(firstly)} ${getRandom(secondly)} ${getRandom(thirdly)}`;
-    console.log("\n🌟 Твоё послание на сегодня 🌟\n");
+    console.log("\n🌟 Your message for today 🌟\n");
     console.log(message);
-};
-
-
+}
 
 Message();
-
-
